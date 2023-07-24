@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'echo "Testing jenkins git webhook"'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
